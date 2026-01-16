@@ -1,0 +1,36 @@
+# Epoch Focus
+
+**Epoch Focus** is a zero-latency "New Tab" override for Firefox. It replaces the noisy default homepage with a minimalist grey canvas and a single piece of Stoic wisdom.
+
+Part of the **Epoch Suite** by [TheCSJourney](https://thecsjourney.com).
+
+![Epoch Focus Screenshot](.github/assets/screenshot-newtab.png)
+
+## The Philosophy
+Standard "New Tab" extensions often load heavy frameworks (React/Vue) or fetch data from remote APIs, introducing 500ms+ latency.
+Epoch Focus is engineered for **speed**:
+- **0ms Network Latency:** Quotes are bundled locally.
+- **0ms Render Block:** No external frameworks, just Vanilla JS.
+- **System Fonts:** No web-font loading shift.
+
+## Features
+- **Stoic Database:** 100+ curated quotes (Seneca, Aurelius, Epictetus).
+- **Theme Match:** Perfectly aligns with the `Epoch Light` browser theme (`#E0E2E5`).
+- **Privacy First:** No tracking, no analytics, no permissions required beyond storage.
+
+## Installation
+1. Download the latest release from [Releases](../../releases){Pending to be available at Mozilla Extension Store}.
+2. Go to `about:addons` -> ⚙️ -> **Install Add-on From File**.
+3. Select the `.zip` file.
+
+## Development
+This project treats the extension as a software artifact.
+
+**Requirements:**
+- Python 3.12+ (for build tools)
+- `uv` (for dependency management)
+
+**Build Assets:**
+```bash
+# Generate high-fidelity icons using Lanczos resampling
+uv run tools/generate_icons.py

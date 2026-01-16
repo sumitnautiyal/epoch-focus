@@ -1,0 +1,49 @@
+/* src/newtab.css */
+
+body {
+    /* The Signature Epoch Grey */
+    background-color: #E0E2E5;
+    
+    /* Remove default browser spacing */
+    margin: 0;
+    padding: 0;
+    
+    /* Flexbox Center Alignment */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Horizontal center */
+    justify-content: center; /* Vertical center */
+    
+    /* Zero-Latency System Fonts */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    padding: 40px;
+    text-align: center;
+}
+
+.quote {
+    font-size: 1.8rem;
+    color: #2C2C2C;       /* Almost black, for contrast */
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    opacity: 0;           /* Hidden initially for fade-in animation */
+    transition: opacity 0.5s ease-in;
+}
+
+.author {
+    font-size: 1rem;
+    color: #5F6368;       /* Muted grey for hierarchy */
+    font-style: italic;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 0.2s; /* Slight delay */
+}
+
+/* Helper class for the fade-in JS logic */
+.visible {
+    opacity: 1;
+}

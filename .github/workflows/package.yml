@@ -1,0 +1,31 @@
+name: Package Extension
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Build Extension Artifact
+        run: python tools/build.py
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v1
+        with:
+          # This pattern matches the zip file created by build.py
+          files: epoch-focus-v*.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

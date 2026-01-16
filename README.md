@@ -22,9 +22,12 @@ Epoch Focus is engineered for **speed**:
 - **Privacy First:** No tracking, no analytics, no permissions required beyond storage.
 
 ## Installation
-1. Download the latest release from [Releases](../../releases){Pending to be available at Mozilla Extension Store}.
+1. Download the latest release from [Releases](../../releases)
 2. Go to `about:addons` -> ⚙️ -> **Install Add-on From File**.
 3. Select the `.zip` file.
+
+## Mozilla Store
+- The theme is currently in review in the Mozilla store and would be available soon
 
 ## Development
 This project treats the extension as a software artifact.

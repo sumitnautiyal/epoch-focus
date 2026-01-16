@@ -4,7 +4,10 @@
 
 Part of the **Epoch Suite** by [TheCSJourney](https://thecsjourney.com).
 
-![Epoch Focus Screenshot](.github/assets/screenshot-newtab.png)
+![Epoch Focus Screenshot]
+- ![Epoch Focus Horizontal Tabs](src/screenshots/epoch-focus-horizontal-tabs.png)
+- ![Epoch Focus Vertical Tabs](src/screenshots/epoch-focus-vertical-tabs.png)
+- ![Epoch Focus Vertical Tabs](src/screenshots/epoch-focus-vertical-tabs-cropped.png)
 
 ## The Philosophy
 Standard "New Tab" extensions often load heavy frameworks (React/Vue) or fetch data from remote APIs, introducing 500ms+ latency.
@@ -34,3 +37,6 @@ This project treats the extension as a software artifact.
 ```bash
 # Generate high-fidelity icons using Lanczos resampling
 uv run tools/generate_icons.py
+
+---
+*Built by [Sumit Nautiyal](https://thecsjourney.com)*

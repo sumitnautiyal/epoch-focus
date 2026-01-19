@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Epoch Focus",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A zero-latency new tab page featuring Stoic wisdom. Part of the Epoch Suite.",
   "author": "Sumit Nautiyal",
   "icons": {

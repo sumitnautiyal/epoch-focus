@@ -17,7 +17,7 @@ Epoch Focus is engineered for **speed**:
 - **System Fonts:** No web-font loading shift.
 
 ## Features
-- **Stoic Database:** 100+ curated quotes (Seneca, Aurelius, Epictetus).
+- **Stoic Database:** A hand-curated collection of Stoic and Eastern wisdom.
 - **Theme Match:** Perfectly aligns with the `Epoch Light` browser theme (`#E0E2E5`).
 - **Privacy First:** No tracking, no analytics, no permissions required beyond storage.
 

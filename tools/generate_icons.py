@@ -19,8 +19,8 @@ def generate_icon(size: int, filename: str) -> None:
     img = Image.new('RGBA', (canvas_size, canvas_size), (255, 255, 255, 0))
     draw = ImageDraw.Draw(img)
     
-    # Geometry Definitions (Relative to canvas size)
-    # 1. Outer Structure Ring
+    # geometry definitions
+    # outer ring
     r1 = canvas_size * 0.45
     draw.ellipse(
         [center - r1, center - r1, center + r1, center + r1],
@@ -28,26 +28,26 @@ def generate_icon(size: int, filename: str) -> None:
         width=int(canvas_size * 0.12)
     )
     
-    # 2. Inner Focus Ring
+    # inner ring
     r2 = canvas_size * 0.28
     draw.ellipse(
         [center - r2, center - r2, center + r2, center + r2],
-        outline=COLOR_ACCENT,
+        outline=COLOR_ACCENT, # color accent
         width=int(canvas_size * 0.08)
     )
     
-    # 3. Core Node
+    # core node
     r3 = canvas_size * 0.12
     draw.ellipse(
         [center - r3, center - r3, center + r3, center + r3],
         fill=COLOR_PRIMARY
     )
 
-    # Downsample and save
+    # downsample and save
     img = img.resize((size, size), resample=Image.LANCZOS)
     
     output_dir = 'src/icons'
-    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True) 
     img.save(os.path.join(output_dir, filename), 'PNG')
     print(f"Generated asset: {filename}")
 
